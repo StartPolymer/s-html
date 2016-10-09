@@ -19,8 +19,6 @@ The complete set of contributors may be found at https://github.com/StartPolymer
 
 </style>
 
-<span id="content"></span>
-
 </template>
 <script>
 
@@ -36,7 +34,7 @@ Polymer({
   },
 
   _htmlChanged: function(html) {
-    this.$.content.innerHTML = html;
+    Polymer.dom(this.root).innerHTML = html;
   }
 
 });
