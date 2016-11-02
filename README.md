@@ -62,3 +62,7 @@ HTML
 ## Installation
 
 `bower i s-html -S`
+
+## License
+
+MIT: [StartPolymer/license](https://github.com/StartPolymer/license)
