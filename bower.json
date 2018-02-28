@@ -14,7 +14,7 @@
     "innerHTML"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.9 - 2"
+    "polymer": "1.9 - 2"
   },
   "license": "MIT",
   "main": "s-html.html",
