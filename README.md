@@ -40,7 +40,7 @@ CSS
 
 HTML
 ```html
-<s-html html="[[localize('text')]]"><span></span></s-html>
+<s-html html="[[localize('text')]]"><span slot="span"></span></s-html>
 ```
 
 ### Example 3
