@@ -1,6 +1,6 @@
 {
   "name": "s-html",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Element wrapper of `.innerHTML` for data binding with HTML elements.",
   "authors": [
     "The StartPolymer Project Authors (https://github.com/StartPolymer/authors)"
