@@ -15,7 +15,10 @@ The complete set of contributors may be found at https://github.com/StartPolymer
 
 :host {
   display: inline-block;
+}
 
+:host > style:first-of-type + * {
+  @apply --shtml-firstchild;
 }
 
 h1 {
