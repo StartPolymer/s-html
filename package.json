@@ -1,0 +1,43 @@
+{
+  "description": "Element wrapper of `.innerHTML` for data binding with HTML elements.",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "html",
+    "data-binding",
+    "unescape",
+    "innerHTML"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brightspace/s-html.git"
+  },
+  "homepage": "https://github.com/Brightspace/s-html#readme",
+  "name": "s-html",
+  "version": "1.2.0",
+  "author": "The StartPolymer Project Authors (https://github.com/StartPolymer/authors)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brightspace/s-html/issues"
+  },
+  "resolutions": {
+    "inherits": "2.0.3",
+    "samsam": "1.1.3",
+    "supports-color": "3.1.2",
+    "type-detect": "1.0.0"
+  },
+  "main": "s-html.js",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@polymer/iron-component-page": "^3.0.0-pre.18",
+    "@polymer/paper-styles": "^3.0.0-pre.18",
+    "@polymer/test-fixture": "^3.0.0-pre.18",
+    "@webcomponents/webcomponentsjs": "^2.2.1",
+    "babel-eslint": "^10.0.1",
+    "polymer-cli": "^1.9.1",
+    "wct-browser-legacy": "^1.0.1"
+  }
+}
