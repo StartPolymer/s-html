@@ -8,11 +8,12 @@ The complete set of contributors may be found at https://github.com/StartPolymer
 import '../@polymer/polymer/polymer-legacy.js';
 
 import { Polymer } from '../@polymer/polymer/lib/legacy/polymer-fn.js';
-import { html as html$0 } from '../@polymer/polymer/lib/utils/html-tag.js';
 import { dom } from '../@polymer/polymer/lib/legacy/polymer.dom.js';
+const $_documentContainer = document.createElement('template');
 
-Polymer({
-  _template: html$0`
+$_documentContainer.innerHTML = `<dom-module id="s-html">
+<template strip-whitespace="">
+
 <style>
 
 :host {
@@ -50,7 +51,14 @@ h6 {
 </style>
 
 <slot></slot>
-`,
+
+</template>
+
+</dom-module>`;
+
+document.head.appendChild($_documentContainer.content);
+
+Polymer({
 
   is: 's-html',
 
@@ -91,4 +99,5 @@ h6 {
 	textarea.innerHTML = html;
 	return textarea.textContent;
   }
+
 });
