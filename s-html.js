@@ -5,10 +5,10 @@ This code may only be used under the MIT License found at https://github.com/Sta
 The complete set of authors may be found at https://github.com/StartPolymer/authors
 The complete set of contributors may be found at https://github.com/StartPolymer/contributors
 */
-import '../@polymer/polymer/polymer-legacy.js';
+import '@polymer/polymer/polymer-legacy.js';
 
-import { Polymer } from '../@polymer/polymer/lib/legacy/polymer-fn.js';
-import { dom } from '../@polymer/polymer/lib/legacy/polymer.dom.js';
+import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
+import { dom } from '@polymer/polymer/lib/legacy/polymer.dom.js';
 const $_documentContainer = document.createElement('template');
 
 $_documentContainer.innerHTML = `<dom-module id="s-html">
