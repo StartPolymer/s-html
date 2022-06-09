@@ -17,20 +17,10 @@ jobs:
         uses: Brightspace/third-party-actions@actions/setup-node
         with:
           node-version-file: .nvmrc
-      - name: Add CodeArtifact npm registry
-        uses: Brightspace/codeartifact-actions/npm/add-registry@main
-        with:
-          auth-token: ${{ secrets.CODEARTIFACT_AUTH_TOKEN }}
-      - name: Get CodeArtifact Authorization Token
-        uses: Brightspace/codeartifact-actions/get-authorization-token@main
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
       - name: Semantic Release
         uses: BrightspaceUI/actions/semantic-release@main
         with:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.D2L_GITHUB_TOKEN }}
           NPM: true
-          NPM_TOKEN: ${{ env.CODEARTIFACT_AUTH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
